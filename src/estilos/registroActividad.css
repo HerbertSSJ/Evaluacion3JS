@@ -42,6 +42,12 @@ button:hover {
   background-color: #2980b9;
 }
 
+
+
+
+
+
+
 .lista-actividades {
   max-width: 600px;
   margin: 2rem auto;
@@ -65,4 +71,28 @@ button:hover {
   padding: 0.75rem;
   border-radius: 4px;
   border: 1px solid #ccc;
+}
+
+
+
+
+
+
+.lista-actividades button {
+  margin-right: 8px;
+  margin-top: 6px;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lista-actividades button:first-child {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.lista-actividades button:last-child {
+  background-color: #e74c3c;
+  color: white;
 }
