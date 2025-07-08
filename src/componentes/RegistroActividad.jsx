@@ -111,14 +111,16 @@ const RegistroActividad = () => {
           <p>No hay actividades registradas aún.</p>
         ) : (
           <ul>
-            {actividades.map((actividad) => (
-              <li key={actividad.id}>
-                <strong>{actividad.tipoActividad}</strong> - {actividad.responsable} ({actividad.fechaActividad})
-                <br />
-                <button onClick={() => editarActividad(actividad)}>Editar</button>
-                <button onClick={() => eliminarActividad(actividad.id)}>Eliminar</button>
-              </li>
-            ))}
+              {actividades.map((actividad) => (
+                <li key={actividad.id}>
+                  <strong>{actividad.tipoActividad}</strong> — {actividad.responsable}
+                  <br />
+                  <span> {actividad.fechaActividad} |  {actividad.asistentesEstimados} asistentes</span>
+                  <br />
+                  <button onClick={() => editarActividad(actividad)}>Editar</button>
+                  <button onClick={() => eliminarActividad(actividad.id)}>Eliminar</button>
+                </li>
+              ))}
           </ul>
         )}
       </section>
